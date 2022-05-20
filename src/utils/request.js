@@ -16,11 +16,4 @@ export default ({ url, method = 'GET', params, data, headers }) => {
     headers: headers
   })
 
-  // 以后换库, 只需要改这里, 逻辑页面不用动, 保证代码的复用性和独立性(高内聚低耦合)
-  //   return $.ajax({
-  //     url: url,
-  //     type: method,
-  //     data: data,
-  //     header: headers
-  //   })
 }

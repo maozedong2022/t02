@@ -10,8 +10,6 @@ export const allChannelListAPI = () =>
   });
 
 // 用户 - 登录接口
-// axios内部, 会把参数对象转成json字符串格式发后台
-// axios内部, 会自动携带请求参数(headers)里Content-Type: 'application/json' 帮你添加好
 export const loginAPI = ({ mobile, code }) => {
   return request({
     url: "/v1_0/authorizations",
@@ -24,7 +22,6 @@ export const loginAPI = ({ mobile, code }) => {
 };
 
 // 频道 - 获取用户选择的频道
-// 注意: 用户没有登录, 默认返回后台设置的默认频道列表
 export const getUserChannelsAPI = () =>
   request({
     url: "/v1_0/user/channels",
