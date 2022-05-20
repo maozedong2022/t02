@@ -1,0 +1,83 @@
+Vscode需要安装的扩展
+IntelliSense for CSS class names in 
+Vue 3 Snippets
+Prettier - Code formatter
+Liveserver(本地服务器)
+
+utf8
+
+npm安装依赖包的时候一定要在项目根目录下 npm isntall 包名
+
+vscode 关闭eslint语法  编写代码时，eslint能自动矫正我们错误的写法
+在扩展里安装eslint
+文件>首选项>设置>setting.json
+"editor.codeActionsOnSave":{
+  "source.fixAll": ture
+}
+
+
+
+git管理vue项目每次提交代码的时候，是不会把node_module里的代码管理进去的
+所以git clone项目到本地后，要 npm install 加载下package.json里面的依赖包，下载到本地项目
+
+
+现在git拉取代码或者push，都需要令牌
+这是令牌的写法
+git remote set-url origin https://令牌@github.com/github用户名/项目名.git 
+每个令牌只能使用一次
+
+
+
+
+…or create a new repository on the command line
+echo "# t01" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/maozedong2022/t01.git
+git push -u origin main
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/maozedong2022/t01.git
+git branch -M main
+git push -u origin main
+
+
+…or import code from another repository
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+
+
+Git操作
+初始化项目到github
+先github上创建一个空项目t01
+然后在本地 git clone t01url
+然后再把整个工程下所有文件复制到t01下
+
+
+本地项目上传github
+//Git init
+Git add .
+Git commit -m “测试提交”
+Git push -u origin main(main就是github上的项目分支)
+
+拖代码
+Git clone url
+
+修改代码上传
+Git add .
+Git commit
+Git push -u origin main
+
+
+
+
+
+
+Vue项目打包
+Npm run build  打包完后会有一个dist文件夹
+
+Vue项目linux部署
+一定要关闭selinux和防火墙，selinux关闭后要reboot重启才生效
+
+Linux安装nginx。Location配置指向 dist文件 即可访问
