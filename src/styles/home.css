@@ -1,0 +1,36 @@
+.initCSS {
+    padding: 0;
+    margin: 0;
+}
+
+.pendant{
+    position: fixed;
+    z-index: 10;
+    height: calc(100vh - 2.74667rem);
+    top: 0;
+    right:0;
+    background-color: transparent;
+    width: 0;
+    background-color: red;
+}
+.pendant .customer{
+    position: absolute;
+    left: -1.54667rem;
+    top: 5.33333rem;
+    display: inline-block;
+    width: 1.06667rem;
+    padding: 0.2rem 0;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.pendant .customer .point{
+    width: 0.26667rem;
+}
+.pendant .customer .title{
+    font-size: .42667rem;
+    color: #fff;
+    margin: 0.2rem 0;
+}

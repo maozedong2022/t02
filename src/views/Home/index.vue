@@ -1,9 +1,11 @@
 <template>
     <div class="home_main" style="background:black;">
-
+        <div class="pendant">
+            <img class="" src="@/assets/dwqiuh.png" alt="" />
+            <p class="title" style="writing-mode: tb-rl;">联系我们</p>
+        </div>
         <!-- 头部导航 -->
         <div>
-
             <!-- fixed 固定在顶部 -->
             <van-nav-bar fixed>
                 <template v-slot:left>
@@ -157,6 +159,7 @@
 import { Toast } from 'vant';
 import { getUserChannelsAPI, articlesListAPI } from '@/api'
 import ArticleList from './component/ArticleList.vue'
+import '@/styles/home.css'
 export default {
     data() {
         return {
@@ -191,10 +194,7 @@ export default {
 </script>
 <!-- <style  scoped lang="less"> -->
 <style   lang="less">
-.initCSS {
-    padding: 0;
-    margin: 0;
-}
+
 
 .logo {
     width: 100px;
