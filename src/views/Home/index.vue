@@ -174,22 +174,9 @@ export default {
     },
     async created() {
         //频道列表
-        const res = await getUserChannelsAPI();
-        // console.log("list",res)
-        this.userChannelList = res.data.data.channels;
 
-        //文章列表
-        const res1 = await articlesListAPI({ channel_id: 0, timestamp: new Date().getTime() });
-        console.log('res1', res1)
-        this.articlesList = res1.data.data.results;
     },
     methods: {
-        // onClickLeft() {
-        //   Toast('返回');
-        // },
-        // onClickRight() {
-        //   Toast('按钮');
-        // },
         goKefu(){
             this.$router.push('/kefu')
         }
