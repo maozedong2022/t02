@@ -1,8 +1,12 @@
 <template>
     <div class="home_main" style="background:black;">
         <div class="pendant">
-            <img class="" src="@/assets/dwqiuh.png" alt="" />
-            <p class="title" style="writing-mode: tb-rl;">联系我们</p>
+            <div class="item customer">
+                <!-- <img class="" src="@/assets/dwqiuh.png" alt="" /> -->
+                <img class="point" src="@/assets/dasdwq123.png" alt="" />
+                <p class="title" style="writing-mode: tb-rl;">联系我们</p>
+                <img class="kf" src="@/assets/dwqdwqewq.png" alt="" />
+            </div>
         </div>
         <!-- 头部导航 -->
         <div>
