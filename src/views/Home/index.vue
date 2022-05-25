@@ -1,7 +1,7 @@
 <template>
     <div class="home_main" style="background:black;">
         <div class="pendant">
-            <div class="item customer">
+            <div class="item customer" @click="goKefu">
                 <!-- <img class="" src="@/assets/dwqiuh.png" alt="" /> -->
                 <img class="point" src="@/assets/dasdwq123.png" alt="" />
                 <p class="title" style="writing-mode: tb-rl;">联系我们</p>
@@ -190,6 +190,9 @@ export default {
         // onClickRight() {
         //   Toast('按钮');
         // },
+        goKefu(){
+            this.$router.push('/kefu')
+        }
     },
     components: {
         ArticleList

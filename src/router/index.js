@@ -4,6 +4,7 @@ import Login from "@/views/Login"; //引入login页面到路由
 import Layout from "@/views/Layout";
 import Home from "@/views/Home";
 import User from "@/views/User";
+import CustomerService from "@/views/CustomerService"
 
 Vue.use(VueRouter);
 
@@ -16,6 +17,10 @@ const routes = [
   {
     path: "/login", //这里代表login路由
     component: Login, //设置login路由转向 Login组件  记得把该组件挂在到App.vue里，<router-view></router-view>
+  },
+  {
+    path: "/kefu", //这里代表login路由
+    component: CustomerService, 
   },
   {
     path: "/layout",
