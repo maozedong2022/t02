@@ -48,13 +48,13 @@
                     </div>
                     <div class="top_menu" style="padding: 1vh 0;">
                         <ul>
-                            <li>
+                            <li @click="register">
                                 <img class="" src="@/assets/hot_reg.cba7d3ca.png" alt="" style="width:7.17333rem;" />
                             </li>
-                            <li>
+                            <li @click="join">
                                 <img class="" src="@/assets/hot_daili.ba8cf178.png" alt="" style="width:7.17333rem;" />
                             </li>
-                            <li>
+                            <li @click="goKefu">
                                 <img class="" src="@/assets/kefu.cf817717.png" alt="" style="width:7.17333rem;" />
                             </li>
                         </ul>
@@ -132,27 +132,6 @@
                     </div>
                 </div>
             </div>
-            <!-- van-tabs 一行容器
-            van-tab 每个tab栏
-            v-model关联的激活项的下标(双向绑定)
-            tab栏+内容
-            2. 坑: sticky参照"父级div标签"进行粘性布局, 如果body/html设置高度, 父级div一起走了, 所以内部sticky也上去的
-
-            3. (重要)每个van-tab代表一个标签导航, 中间夹着内容, 对应的下属列表内容
-            4. (重要)每个van-tab都对应"独立的自己"的ArticleList(多次)
-            5. 细节
-            van-tab循环了很多标签导航, 与之一一对应的内容列表不是上来都创建的, 默认创建当前激活导航对应列表组件
-            第一次切换到对应频道时, 才会创建下属的ArticleList组件->created方法
-            第二次切换就是显示/隐藏切换 -->
-            <!-- <van-tabs v-model="active" sticky animated offset-top="1.226667rem"> 
-                <van-tab v-for="obj in userChannelList" :title="obj.name" :key="obj.id">
-                   {{obj.name}} 
-                    <ArticleList :list="articlesList"></ArticleList>
-                </van-tab>
-                <van-tab title="标签 2">内容 2</van-tab>
-                <van-tab title="标签 3">内容 3</van-tab>
-                <van-tab title="标签 4">内容 4</van-tab> 
-            </van-tabs>-->
         </div>
 
 
@@ -179,6 +158,12 @@ export default {
     methods: {
         goKefu(){
             this.$router.push('/kefu')
+        },
+        register(){
+            this.$router.push('/register')
+        },
+        join(){
+            this.$router.push('/login')
         }
     },
     components: {

@@ -5,6 +5,7 @@ import Layout from "@/views/Layout";
 import Home from "@/views/Home";
 import User from "@/views/User";
 import CustomerService from "@/views/CustomerService"
+import Register from "@/views/Register"
 
 Vue.use(VueRouter);
 
@@ -21,6 +22,10 @@ const routes = [
   {
     path: "/kefu", //这里代表login路由
     component: CustomerService, 
+  },
+  {
+    path: "/register", //这里代表login路由
+    component: Register, 
   },
   {
     path: "/layout",
