@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div class="bodyStyle">
     <div class="login noHeader">
         <div class="page-header">
-          <div class="left-arrow">
-            <i @click="goHome"></i>
+          <div @click="goHome" class="left-arrow">
+            <i></i>
           </div>
           <h1>登录</h1>
           <div class="right-menu">

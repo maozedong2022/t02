@@ -1,9 +1,9 @@
 <template>
-    <div class="customer noHeader">
+    <div class="bodyStyle customer noHeader">
         <div>
             <div class="page-header">
-                <div class="left-arrow">
-                    <i @click="returnHome"></i>
+                <div @click="goHome" class="left-arrow">
+                    <i ></i>
                 </div>
                 <h1>客服</h1>
             </div>
@@ -61,7 +61,7 @@
 <script>
 export default {
     methods: {
-        returnHome(){
+        goHome(){
             this.$router.push('/layout/home')
         }
     },

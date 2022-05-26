@@ -1,5 +1,5 @@
 <template>
-    <div class="home_main" style="background:black;">
+    <div class="home_main bodyStyle" style="background:black;">
         <div class="pendant">
             <div class="item customer" @click="goKefu">
                 <!-- <img class="" src="@/assets/dwqiuh.png" alt="" /> -->
